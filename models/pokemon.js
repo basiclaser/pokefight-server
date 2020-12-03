@@ -8,13 +8,16 @@ const pokemonSchema = new mongoose.Schema(
       chinese: String,
       french: String,
     },
-    types: {
+    type: {
       type: [String],
-      required: true,
     },
     base: {
-      type: Object,
-      required: true,
+      HP: Number,
+      Attack: Number,
+      Defense: Number,
+      "Sp. Attack": Number,
+      "Sp. Defense": Number,
+      Speed: Number,
     },
   },
   { timestamps: true }

@@ -1,6 +1,3 @@
-const fs = require("fs");
-const rawdb = fs.readFileSync("./models/fakePokemonDatabase.json");
-const db = JSON.parse(rawdb);
 const { Pokemon } = require("../models");
 
 exports.getAllPokemon = async function (req, res) {
